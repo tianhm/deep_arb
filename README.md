@@ -1,2 +1,2 @@
 # stat_arb
-A statistical arbitrage trading implementation using daily data and predictive models.
+A statistical arbitrage trading implementation using daily data and deep learning predictive models.
