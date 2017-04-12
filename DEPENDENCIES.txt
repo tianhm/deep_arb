@@ -1,0 +1,14 @@
+Environment:
+sqlite3
+
+Python:
+Written in Python 3.5.2
+
+Python Modules:
+sqlite3
+yahoo_finance
+scikit-learn
+numpy
+pandas
+finsymbols
+tensorflow

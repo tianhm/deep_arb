@@ -25,7 +25,7 @@ class BacktestModule():
         distances = {}
         for t1 in tickers:
             for t2 in tickers:
-                pr("Distance Calculation Completion: " + str(round(i/tot,4)) + "%")
+                pr("Distance Calculation Completion: " + str(round(i/tot * 100,4)) + "%")
                 i+=1
                 if t1 == t2:
                     continue
@@ -58,4 +58,5 @@ class BacktestModule():
 
                 distances[t1 + "|" + t2] = d
 
-                print(distances)
+        #Print for testing.
+        print(distances)
