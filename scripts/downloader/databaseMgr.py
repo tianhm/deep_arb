@@ -11,8 +11,6 @@ class DatabaseMgr():
         self.included_data = []
 
     def checkSQL(self,symbol):
-        startDate = self.startMonth
-
         self.cursor.execute("SELECT name FROM sqlite_master WHERE type='table';")
         res = self.cursor.fetchall()[0]
 
@@ -32,15 +30,9 @@ class DatabaseMgr():
 
 
     def insertSQL(self, symbol):
-        self.cursor.execute("SELECT name FROM sqlite_master WHERE type='table';")
-        res = self.cursor.fetchall()
-
-        res2 = []
-        for r in res:
-            res2.append(r[0])
-
-        if symbol not in res2:
-            self.cursor.execute("CREATE TABLE %s(Adj_Close FLOAT, Close FLOAT, Date DATETIME, High FLOAT, Low FLOAT, Open FLOAT, Volume INT);" % symbol)
+        res = q("SELECT name FROM sqlite_master WHERE type='table';")
+        if symbol not in res:
+            self.cursor.execute("CREATE TABLE %s(Adj_Close FLOAT, Close FLOAT, Date DATE, High FLOAT, Low FLOAT, Open FLOAT, Volume INT);" % symbol)
             self.conn.commit()
         for i in range(self.delta.days + 1):
             this_date = datetime.strftime(self.startDate + timedelta(days=i), "%Y-%m-%d")
@@ -59,6 +51,9 @@ class DatabaseMgr():
                                                                                                  round(float(v[1]),2), v[2],
                                                                                                  round(float(v[3]),2), round(float(v[4]),2),
                                                                                                  round(float(v[5]),2), int(v[7]))
-                    self.cursor.execute(query)
-                    self.conn.commit()
-                    print(query)
+        print(query)
+        sys.exit()
+
+                    #self.cursor.execute(query)
+                    #self.conn.commit()
+                    #print(query)

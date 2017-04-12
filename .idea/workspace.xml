@@ -2,11 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2611ae40-e25d-46c5-a9d0-4b3ef5883e00" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DEPENDENCIES.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LICENSE" afterPath="$PROJECT_DIR$/LICENSE" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/delete_all_prices.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/backtest/distanceCalculation/distance_run.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/scripts/backtest/similarity_calculations.py" afterPath="$PROJECT_DIR$/scripts/backtest/distanceCalculation/similarity_calculations.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/prices.db" afterPath="$PROJECT_DIR$/prices.db" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/deep_arb.iml" afterPath="$PROJECT_DIR$/.idea/deep_arb.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cfg/cfg.ini" afterPath="$PROJECT_DIR$/cfg/cfg.ini" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cfg/tickers.json" afterPath="$PROJECT_DIR$/cfg/tickers.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.py" afterPath="$PROJECT_DIR$/main.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/backtest/backtest_run.py" afterPath="$PROJECT_DIR$/scripts/backtest/backtest_run.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/downloader/databaseMgr.py" afterPath="$PROJECT_DIR$/scripts/downloader/databaseMgr.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/utility.py" afterPath="$PROJECT_DIR$/scripts/utility.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -15,24 +23,17 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="LICENSE" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/LICENSE">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="main.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="843">
+              <caret line="59" column="19" lean-forward="true" selection-start-line="59" selection-start-column="19" selection-end-line="59" selection-end-column="19" />
               <folding>
                 <element signature="e#0#25#0" expanded="true" />
               </folding>
@@ -43,26 +44,47 @@
       <file leaf-file-name="utility.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scripts/utility.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="378">
+              <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="databaseMgr.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="databaseMgr.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/scripts/downloader/databaseMgr.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="20">
-              <caret line="1" column="40" lean-forward="false" selection-start-line="1" selection-start-column="31" selection-end-line="1" selection-end-column="40" />
+            <state relative-caret-position="234">
+              <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
               <folding>
-                <marker date="1491693810102" expanded="true" signature="384:433" ph="SELECT name sqlite_master" />
-                <marker date="1491693810102" expanded="true" signature="696:726" ph="SELECT * FRO... missing_value" />
-                <marker date="1491693810102" expanded="true" signature="1128:1177" ph="SELECT name sqlite_master" />
-                <marker date="1491693810102" expanded="true" signature="1354:1461" ph="CREATE TABLE... missing_value" />
-                <marker date="1491693810102" expanded="true" signature="1770:1800" ph="SElECT * FRO... missing_value" />
-                <marker date="1491693810102" expanded="true" signature="2090:2140" ph="INSERT INTO missing_value... " />
+                <element signature="e#0#29#0" expanded="true" />
+                <marker date="1491975934772" expanded="true" signature="347:396" ph="SELECT name sqlite_master" />
+                <marker date="1491975934772" expanded="true" signature="659:689" ph="SELECT * FRO... missing_value" />
+                <marker date="1491975934772" expanded="true" signature="1079:1128" ph="SELECT name sqlite_master" />
+                <marker date="1491975934772" expanded="true" signature="1195:1298" ph="CREATE TABLE... missing_value" />
+                <marker date="1491975934772" expanded="true" signature="1607:1637" ph="SElECT * FRO... missing_value" />
+                <marker date="1491975934772" expanded="true" signature="1927:1977" ph="INSERT INTO missing_value... " />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tickers.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cfg/tickers.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="42" lean-forward="false" selection-start-line="0" selection-start-column="42" selection-end-line="0" selection-end-column="42" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="backtest_run.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scripts/backtest/backtest_run.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="72">
+              <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -70,63 +92,88 @@
       <file leaf-file-name="downloader.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scripts/downloader/downloader.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="40">
-              <caret line="2" column="15" lean-forward="false" selection-start-line="2" selection-start-column="5" selection-end-line="2" selection-end-column="15" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="downloader_run.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scripts/downloader/downloader_run.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="429">
+              <caret line="28" column="31" lean-forward="false" selection-start-line="28" selection-start-column="31" selection-end-line="28" selection-end-column="31" />
               <folding>
-                <element signature="e#0#9#0" expanded="true" />
+                <element signature="e#0#29#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="backtest_run.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/scripts/backtest/backtest_run.py">
+      <file leaf-file-name="delete_all_prices.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/delete_all_prices.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="525">
-              <caret line="47" column="32" lean-forward="true" selection-start-line="47" selection-start-column="32" selection-end-line="47" selection-end-column="32" />
+            <state relative-caret-position="378">
+              <caret line="21" column="17" lean-forward="true" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="17" />
               <folding>
-                <element signature="e#154#208#0" expanded="true" />
-                <marker date="1491949505579" expanded="true" signature="488:539" ph="SELECT name sqlite_master" />
-                <marker date="1491949505579" expanded="true" signature="1134:1149" ph="SELECT missi... missing_value" />
-                <marker date="1491949505579" expanded="true" signature="1235:1250" ph="SELECT missi... missing_value" />
+                <element signature="e#0#44#0" expanded="true" />
+                <marker date="1491972861720" expanded="true" signature="209:258" ph="SELECT name sqlite_master" />
+                <marker date="1491972861720" expanded="true" signature="493:494" ph="DELETE FROM " />
+                <marker date="1491972861720" expanded="true" signature="493:496" ph="DELETE FROM " />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="similarity_calculations.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scripts/backtest/similarity_calculations.py">
+      <file leaf-file-name="distance_run.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scripts/backtest/distanceCalculation/distance_run.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="612">
+              <caret line="49" column="20" lean-forward="true" selection-start-line="49" selection-start-column="20" selection-end-line="49" selection-end-column="20" />
               <folding>
-                <element signature="e#0#18#0" expanded="true" />
+                <element signature="e#0#74#0" expanded="true" />
+                <marker date="1491971581258" expanded="true" signature="296:347" ph="SELECT name sqlite_master" />
+                <marker date="1491971581258" expanded="true" signature="1010:1024" ph="SELECT * FRO... missing_value" />
+                <marker date="1491971581258" expanded="true" signature="1010:1026" ph="SELECT * FRO... " />
+                <marker date="1491971581258" expanded="true" signature="1167:1181" ph="SELECT * FRO... missing_value" />
+                <marker date="1491971581258" expanded="true" signature="1167:1183" ph="SELECT * FRO... " />
+                <marker date="1491971581258" expanded="true" signature="1338:1353" ph="SELECT missi... missing_value" />
+                <marker date="1491971581258" expanded="true" signature="1445:1462" ph="SELECT Date " />
+                <marker date="1491971581258" expanded="true" signature="1445:1464" ph="SELECT Date " />
+                <marker date="1491971581258" expanded="true" signature="1538:1552" ph="SELECT * FRO... missing_value" />
+                <marker date="1491971581258" expanded="true" signature="1538:1554" ph="SELECT * FRO... " />
+                <marker date="1491971581258" expanded="true" signature="1961:1976" ph="SELECT missi... missing_value" />
+                <marker date="1491971581258" expanded="true" signature="2068:2085" ph="SELECT Date " />
+                <marker date="1491971581258" expanded="true" signature="2161:2175" ph="SELECT * FRO... missing_value" />
+                <marker date="1491971581258" expanded="true" signature="2161:2177" ph="SELECT * FRO... " />
+                <marker date="1491971581258" expanded="true" signature="3449:3506" ph="SELECT * FRO... distances" />
+                <marker date="1491971581258" expanded="true" signature="3449:3509" ph="SELECT * FRO... distances" />
+                <marker date="1491971581258" expanded="true" signature="3449:3530" ph="SELECT * FRO... distances" />
+                <marker date="1491971581258" expanded="true" signature="3449:3535" ph="SELECT * FRO... distances" />
+                <marker date="1491971581258" expanded="true" signature="3679:3736" ph="SELECT * FRO... distances" />
+                <marker date="1491971581258" expanded="true" signature="3679:3739" ph="SELECT * FRO... distances" />
+                <marker date="1491971581258" expanded="true" signature="3679:3765" ph="SELECT * FRO... distances" />
+                <marker date="1491971581258" expanded="true" signature="3960:4053" ph="INSERT INTO distances... " />
+                <marker date="1491971581258" expanded="true" signature="4246:4317" ph="UPDATE dista... " />
+                <marker date="1491971581258" expanded="true" signature="4246:4339" ph="UPDATE dista... " />
+                <marker date="1491971581258" expanded="true" signature="4246:4343" ph="UPDATE dista... " />
+                <marker date="1491971581258" expanded="true" signature="4537:4608" ph="UPDATE dista... " />
+                <marker date="1491971581258" expanded="true" signature="4537:4627" ph="UPDATE dista... " />
+                <marker date="1491971581258" expanded="true" signature="4537:4634" ph="UPDATE dista... " />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DEPENDENCIES.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/DEPENDENCIES.txt">
+      <file leaf-file-name="cfg.ini" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cfg/cfg.ini">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="11" column="6" lean-forward="false" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
+            <state relative-caret-position="414">
+              <caret line="23" column="92" lean-forward="false" selection-start-line="23" selection-start-column="92" selection-end-line="23" selection-end-column="92" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -135,7 +182,14 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/DEPENDENCIES.txt" />
+        <option value="$PROJECT_DIR$/scripts/utility.py" />
         <option value="$PROJECT_DIR$/scripts/backtest/backtest_run.py" />
+        <option value="$PROJECT_DIR$/cfg/cfg.ini" />
+        <option value="$PROJECT_DIR$/main.py" />
+        <option value="$PROJECT_DIR$/scripts/backtest/distanceCalculation/distance_run.py" />
+        <option value="$PROJECT_DIR$/cfg/tickers.json" />
+        <option value="$PROJECT_DIR$/delete_all_prices.py" />
+        <option value="$PROJECT_DIR$/scripts/downloader/databaseMgr.py" />
       </list>
     </option>
   </component>
@@ -147,9 +201,9 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="65" />
-    <option name="y" value="-4" />
+    <option name="y" value="24" />
     <option name="width" value="1855" />
-    <option name="height" value="1084" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -166,6 +220,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -228,15 +284,55 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="deep_arb" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="deep_arb" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scripts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="backtest" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="distanceCalculation" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="deep_arb" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="deep_arb" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cfg" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/scripts/backtest/distanceCalculation" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -264,27 +360,28 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="65" y="-4" width="1855" height="1084" extended-state="6" />
+    <frame x="65" y="24" width="1855" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24959569" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24797843" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -304,14 +401,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DEPENDENCIES.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="11" column="6" lean-forward="false" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
           <folding />
         </state>
       </provider>
@@ -336,22 +425,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/scripts/downloader/databaseMgr.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20">
+        <state relative-caret-position="18">
           <caret line="1" column="40" lean-forward="false" selection-start-line="1" selection-start-column="31" selection-end-line="1" selection-end-column="40" />
-          <folding>
-            <marker date="1491693810102" expanded="true" signature="384:433" ph="SELECT name sqlite_master" />
-            <marker date="1491693810102" expanded="true" signature="696:726" ph="SELECT * FRO... missing_value" />
-            <marker date="1491693810102" expanded="true" signature="1128:1177" ph="SELECT name sqlite_master" />
-            <marker date="1491693810102" expanded="true" signature="1354:1461" ph="CREATE TABLE... missing_value" />
-            <marker date="1491693810102" expanded="true" signature="1770:1800" ph="SElECT * FRO... missing_value" />
-            <marker date="1491693810102" expanded="true" signature="2090:2140" ph="INSERT INTO missing_value... " />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/scripts/downloader/downloader.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="40">
+        <state relative-caret-position="36">
           <caret line="2" column="15" lean-forward="false" selection-start-line="2" selection-start-column="5" selection-end-line="2" selection-end-column="15" />
           <folding />
         </state>
@@ -362,12 +444,20 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#9#0" expanded="true" />
+            <element signature="e#0#9#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/backtest/similarity_calculations.py">
+    <entry file="file://$PROJECT_DIR$/scripts/backtest/backtest_run.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/backtest/distanceCalculation/similarity_calculations.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -377,15 +467,163 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/DEPENDENCIES.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" column="6" lean-forward="false" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LICENSE">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DEPENDENCIES.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" column="6" lean-forward="false" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/backtest/distanceCalculation/similarity_calculations.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/downloader/downloader_run.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cfg/cfg.ini">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="23" column="92" lean-forward="false" selection-start-line="23" selection-start-column="92" selection-end-line="23" selection-end-column="92" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="843">
+          <caret line="59" column="19" lean-forward="true" selection-start-line="59" selection-start-column="19" selection-end-line="59" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cfg/tickers.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="42" lean-forward="false" selection-start-line="0" selection-start-column="42" selection-end-line="0" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/utility.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/backtest/distanceCalculation/distance_run.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="49" column="20" lean-forward="true" selection-start-line="49" selection-start-column="20" selection-end-line="49" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#74#0" expanded="true" />
+            <marker date="1491971581258" expanded="true" signature="296:347" ph="SELECT name sqlite_master" />
+            <marker date="1491971581258" expanded="true" signature="1010:1024" ph="SELECT * FRO... missing_value" />
+            <marker date="1491971581258" expanded="true" signature="1010:1026" ph="SELECT * FRO... " />
+            <marker date="1491971581258" expanded="true" signature="1167:1181" ph="SELECT * FRO... missing_value" />
+            <marker date="1491971581258" expanded="true" signature="1167:1183" ph="SELECT * FRO... " />
+            <marker date="1491971581258" expanded="true" signature="1338:1353" ph="SELECT missi... missing_value" />
+            <marker date="1491971581258" expanded="true" signature="1445:1462" ph="SELECT Date " />
+            <marker date="1491971581258" expanded="true" signature="1445:1464" ph="SELECT Date " />
+            <marker date="1491971581258" expanded="true" signature="1538:1552" ph="SELECT * FRO... missing_value" />
+            <marker date="1491971581258" expanded="true" signature="1538:1554" ph="SELECT * FRO... " />
+            <marker date="1491971581258" expanded="true" signature="1961:1976" ph="SELECT missi... missing_value" />
+            <marker date="1491971581258" expanded="true" signature="2068:2085" ph="SELECT Date " />
+            <marker date="1491971581258" expanded="true" signature="2161:2175" ph="SELECT * FRO... missing_value" />
+            <marker date="1491971581258" expanded="true" signature="2161:2177" ph="SELECT * FRO... " />
+            <marker date="1491971581258" expanded="true" signature="3449:3506" ph="SELECT * FRO... distances" />
+            <marker date="1491971581258" expanded="true" signature="3449:3509" ph="SELECT * FRO... distances" />
+            <marker date="1491971581258" expanded="true" signature="3449:3530" ph="SELECT * FRO... distances" />
+            <marker date="1491971581258" expanded="true" signature="3449:3535" ph="SELECT * FRO... distances" />
+            <marker date="1491971581258" expanded="true" signature="3679:3736" ph="SELECT * FRO... distances" />
+            <marker date="1491971581258" expanded="true" signature="3679:3739" ph="SELECT * FRO... distances" />
+            <marker date="1491971581258" expanded="true" signature="3679:3765" ph="SELECT * FRO... distances" />
+            <marker date="1491971581258" expanded="true" signature="3960:4053" ph="INSERT INTO distances... " />
+            <marker date="1491971581258" expanded="true" signature="4246:4317" ph="UPDATE dista... " />
+            <marker date="1491971581258" expanded="true" signature="4246:4339" ph="UPDATE dista... " />
+            <marker date="1491971581258" expanded="true" signature="4246:4343" ph="UPDATE dista... " />
+            <marker date="1491971581258" expanded="true" signature="4537:4608" ph="UPDATE dista... " />
+            <marker date="1491971581258" expanded="true" signature="4537:4627" ph="UPDATE dista... " />
+            <marker date="1491971581258" expanded="true" signature="4537:4634" ph="UPDATE dista... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/delete_all_prices.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="21" column="17" lean-forward="true" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="17" />
+          <folding>
+            <element signature="e#0#44#0" expanded="true" />
+            <marker date="1491972861720" expanded="true" signature="209:258" ph="SELECT name sqlite_master" />
+            <marker date="1491972861720" expanded="true" signature="493:494" ph="DELETE FROM " />
+            <marker date="1491972861720" expanded="true" signature="493:496" ph="DELETE FROM " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/scripts/backtest/backtest_run.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="47" column="32" lean-forward="true" selection-start-line="47" selection-start-column="32" selection-end-line="47" selection-end-column="32" />
+        <state relative-caret-position="72">
+          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/downloader/downloader.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="429">
+          <caret line="28" column="31" lean-forward="false" selection-start-line="28" selection-start-column="31" selection-end-line="28" selection-end-column="31" />
           <folding>
-            <element signature="e#154#208#0" expanded="true" />
-            <marker date="1491949505579" expanded="true" signature="488:539" ph="SELECT name sqlite_master" />
-            <marker date="1491949505579" expanded="true" signature="1134:1149" ph="SELECT missi... missing_value" />
-            <marker date="1491949505579" expanded="true" signature="1235:1250" ph="SELECT missi... missing_value" />
+            <element signature="e#0#29#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/downloader/databaseMgr.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#29#0" expanded="true" />
+            <marker date="1491975934772" expanded="true" signature="347:396" ph="SELECT name sqlite_master" />
+            <marker date="1491975934772" expanded="true" signature="659:689" ph="SELECT * FRO... missing_value" />
+            <marker date="1491975934772" expanded="true" signature="1079:1128" ph="SELECT name sqlite_master" />
+            <marker date="1491975934772" expanded="true" signature="1195:1298" ph="CREATE TABLE... missing_value" />
+            <marker date="1491975934772" expanded="true" signature="1607:1637" ph="SElECT * FRO... missing_value" />
+            <marker date="1491975934772" expanded="true" signature="1927:1977" ph="INSERT INTO missing_value... " />
           </folding>
         </state>
       </provider>

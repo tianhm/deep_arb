@@ -1,4 +1,4 @@
-import datetime, sqlite3, sys
+import datetime, sqlite3, sys, re
 
 def p(text):
     print(str(datetime.datetime.now()) + " | " + text)
