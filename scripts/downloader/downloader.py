@@ -57,12 +57,12 @@ class PriceDownloader():
             except Exception as e:
                 p("Unable to download data for " + t + ".")
                 p("Full Exception: " + str(e))
-            sys.stdout.write("\rDownload Completion: %s percent." % round(i/tot*100,4))
-            sys.stdout.flush()
+            pr("\rDownload Completion: " + str(round(i/tot*100,4)) + "%")
+
             i+=1
         print("\n")
         p("Download complete.")
-        return(outlist)
+        return outlist
 
 
     def queryYahooFinance(self,ticker):

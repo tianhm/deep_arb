@@ -24,6 +24,7 @@ class DownloaderModule(SymbolDownloader, DatabaseMgr):
 
         dl = PriceDownloader(list(self.missing_data),self.cfg)
         self.prices = dl.run()
+        #check content of self.prices
 
         p("Inserting missing data into SQL.")
         for t in list(self.missing_data):

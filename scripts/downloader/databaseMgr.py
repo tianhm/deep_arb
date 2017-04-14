@@ -1,12 +1,10 @@
 from scripts.utility import *
 from datetime import datetime, timedelta
 
-import sqlite3
+import sqlite3, pandas as pd
 
 class DatabaseMgr():
     def __init__(self):
-        self.conn = sqlite3.connect("prices.db")
-        self.cursor = self.conn.cursor()
         self.missing_data = []
         self.included_data = []
 
@@ -42,7 +40,11 @@ class DatabaseMgr():
             r = self.cursor.fetchall()
 
             if r == []:
-                this_row = self.prices[symbol].loc[self.prices[symbol]["Date"] == this_date]
+                try:
+                    this_row = self.prices[symbol].loc[self.prices[symbol]["Date"] == this_date]
+                except Exception as e:
+                    break
+
 
                 if not this_row.empty:
                     v = this_row.values[0]
@@ -51,9 +53,6 @@ class DatabaseMgr():
                                                                                                  round(float(v[1]),2), v[2],
                                                                                                  round(float(v[3]),2), round(float(v[4]),2),
                                                                                                  round(float(v[5]),2), int(v[7]))
-        print(query)
-        sys.exit()
-
-                    #self.cursor.execute(query)
-                    #self.conn.commit()
-                    #print(query)
+                    print(query)
+                    self.cursor.execute(query)
+                    self.conn.commit()

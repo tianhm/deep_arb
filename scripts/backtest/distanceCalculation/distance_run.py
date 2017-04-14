@@ -59,9 +59,6 @@ class DistanceModule():
                     print(self.cursor.fetchall())
                     sys.exit()
 
-                print(date1)
-                print(date2)
-                sys.exit()
 
 
 
@@ -85,21 +82,21 @@ class DistanceModule():
                     d = manhattanDistance(vec1b, vec2b)
 
                 select_sql1 = "SELECT * FROM distances WHERE stock1 = '%s' AND stock2 = '%s' AND distance_type = '%s';" % (t1,t2,dist)
-                self.cursor.execute(select_sql1)
-                res1 = self.cursor.fetchall()
+                self.distances_cursor.execute(select_sql1)
+                res1 = self.distances_cursor.fetchall()
                 select_sql2 = "SELECT * FROM distances WHERE stock1 = '%s' AND stock2 = '%s' AND distance_type = '%s';" % (t2,t1, dist)
-                self.cursor.execute(select_sql2)
-                res2 = self.cursor.fetchall()
+                self.distances_cursor.execute(select_sql2)
+                res2 = self.distances_cursor.fetchall()
 
                 if res1 == [] and res2 == []:
                     insert_sql = "INSERT INTO distances (stock1, stock2, distance, distance_type) VALUES ('%s', '%s', %s, '%s')" % (t1, t2, d, dist)
-                    self.cursor.execute(insert_sql)
-                    self.conn.commit()
+                    self.distances_cursor.execute(insert_sql)
+                    self.distances_conn.commit()
                 if res1 == [] and res2 != []:
                     update_sql = "UPDATE distances SET distance = %s WHERE stock1 = '%s' AND stock2 = '%s' AND distance_type = '%s';" % (d, t2, t1, dist)
-                    self.cursor.execute(update_sql)
-                    self.conn.commit()
+                    self.distances_cursor.execute(update_sql)
+                    self.distances_conn.commit()
                 if res1 != [] and res2 == []:
                     update_sql = "UPDATE distances SET distance = %s WHERE stock1 = '%s' AND stock2 = '%s' AND distance_type = '%s';" % (d, t1, t2, dist)
-                    self.cursor.execute(update_sql)
-                    self.conn.commit()
+                    self.distances_cursor.execute(update_sql)
+                    self.distances_conn.commit()

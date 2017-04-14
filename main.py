@@ -31,6 +31,12 @@ class statArb(DownloaderModule,BacktestModule,DistanceModule):
         self.endDate = datetime.datetime.strptime(self.endDay + "-" + self.endMonth + "-" + self.endYear, "%d-%m-%Y")
         self.delta = self.endDate - self.startDate
 
+        self.conn = sqlite3.connect("prices.db")
+        self.cursor = self.conn.cursor()
+
+        self.distances_conn = sqlite3.connect("distances.db")
+        self.distances_cursor = self.distances_conn.cursor()
+
         DownloaderModule.__init__(self)
         BacktestModule.__init__(self)
         DistanceModule.__init__(self)
@@ -38,7 +44,7 @@ class statArb(DownloaderModule,BacktestModule,DistanceModule):
     def statArbRun(self):
         if self.useDownloaderModule or self.useAllModules:
             self.downloaderModuleRun()
-        if self.useDistanceModule:
+        if self.useDistanceModule or self.useAllModules:
             self.getDistance()
         if self.useBacktestModule or self.useAllModules:
             self.backtestModuleRun()
@@ -55,6 +61,8 @@ if __name__ == '__main__':
     parser.add_argument("-f", help="Fetch fresh tickers. Fetches new tickers from the internet (based on what index is specified in cfg.ini and saves them to ;tickers.json;.", action="store_true")
 
     args = parser.parse_args()
+
+    args.a = True
 
     sa = statArb(args.f, args.down, args.dist, args.back, args.a)
     sa.statArbRun()
