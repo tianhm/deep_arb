@@ -16,7 +16,9 @@ The backtester and all subsequent modules are not yet functional.
   e. '-f' (only applicable when using '-a' or '-down' to download a new set of tickers).  
   
 ## Deleting Data
-To delete all price data from the database, run 'delete_all_prices.py' without any command line arguments. This will delete all price tables from prices.db. NOTE: This will not delete the data from the 'distances' table. To do that, open the DB and run 'DELETE FROM distances;'.
+To delete all price data from the database, run 'delete_all_prices.py' without any command line arguments. This will delete all price tables from prices.db.  
+  
+Delete program for the distances db is a WIP.
   
 ## Config File
 The config file (/cfg/cfg.ini) contains several values that can modify the backtester.
