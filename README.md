@@ -36,4 +36,4 @@ The config file (/cfg/cfg.ini) contains several values that can modify the backt
 12. [model][train_ratio] is the proportion of data that will be used for training the model as opposed to testing.
 
 ## Tickers File
-The tickers file (/cfg/tickers.json) contains all of the tickers that the program will download data for. This file is updated when you use a '-f' command line argument. This file can also be manually maintained by the user.
+The tickers file (/cfg/tickers.json) contains all of the tickers that the program will download data for. This file is updated when you use a '-f' command line argument when running main.py. This file can also be manually maintained by the user.
