@@ -1,8 +1,9 @@
 from scripts.downloader.databaseMgr import *
 from scripts.utility import *
-class DeleteModule(DatabaseMgr):
+class DeleteModule():
     def __init__(self):
-        DatabaseMgr.__init__(self)
+        self.conn = sqlite3.connect("prices.db")
+        self.cursor = self.conn.cursor()
     def deleteRun(self):
         res = q("SELECT name FROM sqlite_master WHERE type='table';")
         i=1

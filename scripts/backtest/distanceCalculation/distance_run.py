@@ -59,7 +59,11 @@ class DistanceModule():
                     print(self.cursor.fetchall())
                     sys.exit()
 
-
+                print("\n")
+                print(date1)
+                print("###")
+                print(date2)
+                sys.exit()
 
 
                 if len(vec1) != len(vec2):

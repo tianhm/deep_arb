@@ -62,7 +62,8 @@ if __name__ == '__main__':
 
     args = parser.parse_args()
 
-    args.a = True
+    args.down = False
+    args.dist = True
 
     sa = statArb(args.f, args.down, args.dist, args.back, args.a)
     sa.statArbRun()

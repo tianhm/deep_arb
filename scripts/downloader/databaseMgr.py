@@ -49,7 +49,7 @@ class DatabaseMgr():
                 if not this_row.empty:
                     v = this_row.values[0]
 
-                    query = "INSERT INTO %s VALUES (%s, %s, %s, %s, %s, %s, %s);" % (symbol, round(float(v[0]),2),
+                    query = "INSERT INTO %s VALUES (%s, %s, '%s', %s, %s, %s, %s);" % (symbol, round(float(v[0]),2),
                                                                                                  round(float(v[1]),2), v[2],
                                                                                                  round(float(v[3]),2), round(float(v[4]),2),
                                                                                                  round(float(v[5]),2), int(v[7]))
